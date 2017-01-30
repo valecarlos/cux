@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
+  <title>Canal UX</title>
+  <meta name="description" content="Canal UX">
   <meta name="author" content="Carlos Valencia">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/css/styles.css">
+  <link rel="stylesheet" href="styles/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!--<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">-->
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,12 +19,13 @@
 
 <body>
     <div class="container-fluid">
-        <header>
+        <header class="clearfix">
           <div class="logo">
-            <p><span></span></p>
+            <p>Canal</p>
+            <span>UX</span>
           </div>
           <nav>
-            <ul>
+            <ul class="main-nav">
               <li>
                 <a href="#">
                   Cómo funciona
@@ -37,77 +41,132 @@
                   Planes y precios
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  Gane dinero revisando sitios web
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Registrarme
-                </a>
-              </li>
             </ul>
           </nav>
+          <div class="menu-right">
+            <div class="testers-signup-btn">
+              <a href="#">
+                Gane dinero revisando sitios web
+              </a>
+            </div>
+            <div class="register-btn">
+              <a href="#">
+                Registrarme
+              </a>
+            </div>
+          </div>
         </header>
         <section class="landing-main">
           <div class="intro-blurb">
             <p>Mejora la experiencia digital de sus clientes en incremente los ingresos de su negocio con</p>
             <h1>TESTS REMOTOS DE USABILIDAD</h1>
             <a href="">
+              <div class="circled-icon">
+                <i class="fa fa-play" aria-hidden="true"></i>
+              </div>
               <div class="main-video-link">
                 Vea un video ejemplo
               </div>
             </a>
           </div>
-          <div class="navigate-down"></div>
-          <div class="chat-button">
-
-          </div>
+          <button class="start-chat">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+          </button>
         </section>
         <section class="abstract">
           <h2>Cómo funciona</h2>
           <p>Nuestra plataforma le permite observar y entender cómo sus clientes navegan su sitio web o interfaz digital</p>
           <div class="row row-centered">
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div>1</div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 service-card">
+                <h3>1</h3>
                 <div>
-                  <img class="img-responsive img-circle" src="https://unsplash.it/200/200" alt="primera imagen">
+                  <img class="img-responsive img-circle center-block" src="https://unsplash.it/250/250" alt="primera imagen">
                 </div>
-                <h5>Diseñe la navegación</h5>
-                <p>Cree un escenario con tareas específicas para que sean llevadas a cabo durante el test</p>
+                <h4>Seleccione el servicio</h4>
+                <p>Elija el servicio de su interés y regístrese en la plataforma creando una cuenta de usuario</p>
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div>2</div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 service-card">
+                <h3>2</h3>
                 <div>
-                  <img class="img-responsive img-circle" src="https://unsplash.it/200/200" alt="primera imagen">
+                  <img class="img-responsive img-circle center-block" src="https://unsplash.it/250/250" alt="primera imagen">
                 </div>
-                <h5>Elija sus usarios</h5>
-                <p>Seleccione de nuestro banco de usuarios calificados o utilice sus propios usuarios</p>
+                <h4>Diseñe su prueba de usabilidad</h4>
+                <p>Defina las tareas, los parámetros de la prueba, especifique el tipo de usuarios y publique el test</p>
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <div>3</div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 service-card">
+                <h3>3</h3>
                 <div>
-                  <img class="img-responsive img-circle" src="https://unsplash.it/200/200" alt="primera imagen">
+                  <img class="img-responsive img-circle center-block" src="https://unsplash.it/250/250" alt="primera imagen">
                 </div>
-                <h5>Diseñe la navegación</h5>
-                <p>Vea videos de sus usuarios e identifique problemas de navegación para corregirlos</p>
+                <h4>Obtenga retroalimentación</h4>
+                <p>Identifique problemas de navegabilidad para mejorar la experiencia de usuarios</p>
               </div>
           </div>
         </section>
-        <section class="benefits">
-          <h2>Beneficios</h2>
-          <p>Cheque cualquier elemento de su sitio web o plataforma digital, desde pequeños detalles, hasta la jornada de usuario de principio a fin</p>
+        <section class="services">
+          <h2>Servicios</h2>
+          <p>Ponga a prueba cualquier elemento de su sitio web o plataforma digital, desde pequeños detalles, hasta la jornada de usuario de principio a fin</p>
+          <div class="services-card-wrapper row">
+            <div class="service-card col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <h3>Tests remotos de usabilidad</h3>
+              <p>observe cómo sus usuarios interactúan con su plataforma digital y escuche comentarios sobre la experiencia que tienen</p>
+            </div>
+            <div class="service-card col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <h3>Test de preferencia</h3>
+              <p>Deje que sus usuarios elijan por usted. Compare dos o más opciones de prototipos, logos o diseos de su página web</p>
+            </div>
+            <div class="service-card col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <h3>Opinión de expertos</h3>
+              <p>Acceda a consultoría especializada sobre aspectos de usabilidad y la experiencia digital de sus usuarios</p>
+            </div>
+            <div class="service-card col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <h3>Test del primer click</h3>
+              <p>Cerciórese que sus usuarios naveguen por la ruta adecuada en su sitio oeb o plataforma digital al completar una acción</p>
+            </div>
+          </div>
         </section>
         <section class="plans">
           <h2>Planes y precios</h2>
-
+          <p>Soluciones diseñadas para cubrir las necesidades de optimización de sus requerimientos</p>
+          <div class="row">
+            <div class="plan-card offset-lg-3 offset-md-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div>
+                  <img class="img-responsive img-circle center-block" src="https://unsplash.it/200/200" alt="primera imagen">
+              </div>
+              <h3>Nuestros usuarios</h3>
+              <p>15 USD por usuario/video</p>
+            </div>
+            <div class="plan-card col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div>
+                  <img class="img-responsive img-circle center-block" src="https://unsplash.it/200/200" alt="primera imagen">
+              </div>
+              <h3>Sus usuarios</h3>
+              <p>8 USD por usuario/video</p>
+            </div>
+          </div>
         </section>
         <footer>
-
+            <ul class="nav-links clearfix">
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Política de privacidad</a></li>
+              <li><a href="#">Contáctenos</a></li>
+              <li><a href="#">FAQ Empresas</a></li>
+            </ul>
+            <ul class="social-links">
+              <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+            <p>2017 Canal UX,, All rights reserved</p>
         </footer>
-    </div>
+    <div class="chat-box">
 
-  <script src="js/scripts.js"></script>
+    </div>
+    </div>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

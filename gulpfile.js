@@ -1,12 +1,17 @@
-// include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp'),
+    uglify = require('gulp-uglify'),
+    sass = require('gulp-sass');
 
-// include plug-ins
-var jshint = require('gulp-jshint');
+gulp.task('default', function() {
+  // place code for your default task here
+});
 
-// JS hint task
-gulp.task('jshint', function() {
-  gulp.src('./src/scripts/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
+gulp.task('sass', function () {
+  return gulp.src('./src/styles/sass/*.sass')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./src/styles/css'));
+});
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('./src/styles/sass/*.sass', ['sass']);
 });

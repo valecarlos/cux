@@ -1,0 +1,196 @@
+html {
+  font-size: 16px; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.container-fluid {
+  padding: 0px; }
+
+footer {
+  color: white;
+  background-color: #413939;
+  padding: 20px; }
+  footer > p {
+    padding: 10px;
+    font-size: 0.9em;
+    clear: both; }
+  footer ul.nav-links {
+    float: left; }
+    footer ul.nav-links li {
+      border-right: solid 1px white;
+      float: left; }
+      footer ul.nav-links li:last-of-type {
+        border: none; }
+      footer ul.nav-links li a {
+        color: white;
+        display: block;
+        padding: 5px 10px; }
+  footer ul.social-links {
+    float: right;
+    margin-right: calc(5% + 65px); }
+    footer ul.social-links li {
+      display: inline-block; }
+      footer ul.social-links li a {
+        color: white;
+        padding: 5px;
+        font-size: 1.5em; }
+
+header {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-weight: 700;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  z-index: 100; }
+
+.logo {
+  font-size: 2em;
+  float: left;
+  font-weight: 700; }
+  .logo p {
+    color: white;
+    background-color: black;
+    padding: 0px 10px;
+    display: inline-block; }
+  .logo span {
+    color: black;
+    background-color: white;
+    display: inline-block; }
+
+nav .main-nav li {
+  display: inline-block;
+  padding: 10px; }
+  nav .main-nav li a {
+    display: block;
+    color: black; }
+
+.menu-right div {
+  display: inline-block;
+  margin-left: 10px; }
+
+.menu-right .testers-signup-btn {
+  background-color: #18b654;
+  padding: 10px 12px; }
+  .menu-right .testers-signup-btn a {
+    color: white;
+    display: block; }
+
+.menu-right .register-btn {
+  padding: 10px 12px;
+  border: 1px solid black; }
+  .menu-right .register-btn a {
+    color: black;
+    display: block; }
+
+.col-centered {
+  float: none;
+  margin: 0 auto; }
+
+section {
+  text-align: center; }
+
+.landing-main {
+  height: 100vh;
+  background: url(https://unsplash.it/1200/700) no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative; }
+  .landing-main .intro-blurb {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .landing-main .intro-blurb p {
+      font-size: 1.6em; }
+    .landing-main .intro-blurb h1 {
+      font-weight: bold; }
+    .landing-main .intro-blurb a {
+      display: inline-block; }
+      .landing-main .intro-blurb a .circled-icon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border: 1px solid white;
+        border-radius: 50%;
+        float: left;
+        color: white;
+        margin-right: 5px; }
+      .landing-main .intro-blurb a .main-video-link {
+        line-height: 35px;
+        color: white;
+        font-size: 1.3em;
+        white-space: nowrap;
+        display: inline-block; }
+  .landing-main .start-chat {
+    background-color: #ef5251;
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    border: none;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 2em;
+    z-index: 100; }
+
+.abstract {
+  padding: 40px 0px; }
+  .abstract > p {
+    font-size: 1.3em; }
+  .abstract h3 {
+    margin-bottom: 15px;
+    font-size: 2em; }
+  .abstract img {
+    margin-bottom: 25px; }
+  .abstract .service-card h4 {
+    margin: 0px auto 10px auto;
+    font-weight: 700;
+    font-size: 1.3em; }
+  .abstract .service-card p {
+    max-width: 250px;
+    margin: auto; }
+
+.services {
+  padding: 40px 25px;
+  background: linear-gradient(to bottom, #cbcbcb 0%, #cbcbcb 50%, #585858 51%, #585858 100%); }
+  .services > h2 {
+    margin-bottom: 15px; }
+  .services > p {
+    margin: 0px auto 15px;
+    font-size: 1.3em;
+    padding: 15px;
+    max-width: 800px; }
+  .services .row {
+    display: flex;
+    flex-wrap: wrap; }
+    .services .row .row > [class*='col-'] {
+      display: flex;
+      flex-direction: column; }
+  .services .services-card-wrapper {
+    max-width: 860px;
+    margin: 0px auto 10px;
+    box-shadow: 5px 5px 5px #282828; }
+    .services .services-card-wrapper .service-card {
+      background-color: white;
+      border: 1px solid #9a9a9a;
+      padding: 20px 10%; }
