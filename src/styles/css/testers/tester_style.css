@@ -1,0 +1,215 @@
+html {
+  font-size: 16px; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+button:focus {
+  outline: 0; }
+
+.container-fluid {
+  padding: 0px; }
+
+footer {
+  color: white;
+  background-color: #413939;
+  padding: 20px; }
+  footer > p {
+    padding: 10px;
+    font-size: 0.9em;
+    clear: both; }
+  footer ul.nav-links {
+    float: left; }
+    footer ul.nav-links li {
+      border-right: solid 1px white;
+      float: left; }
+      footer ul.nav-links li:last-of-type {
+        border: none; }
+      footer ul.nav-links li a {
+        color: white;
+        display: block;
+        padding: 5px 10px; }
+  footer ul.social-links {
+    float: right;
+    margin-right: calc(5% + 65px); }
+    footer ul.social-links li {
+      display: inline-block; }
+      footer ul.social-links li a {
+        color: white;
+        padding: 5px;
+        font-size: 1.5em; }
+
+header {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-weight: 700;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  z-index: 100; }
+
+.logo {
+  font-size: 2em;
+  float: left;
+  font-weight: 700; }
+  .logo p {
+    color: white;
+    background-color: black;
+    padding: 0px 10px;
+    display: inline-block; }
+  .logo span {
+    color: black;
+    background-color: white;
+    display: inline-block; }
+
+nav .main-nav li {
+  display: inline-block;
+  padding: 10px; }
+  nav .main-nav li a {
+    display: block;
+    color: black; }
+
+.menu-right div {
+  display: inline-block;
+  margin-left: 10px; }
+
+.menu-right .testers-signup-btn {
+  background-color: #18b654;
+  padding: 10px 12px; }
+  .menu-right .testers-signup-btn a {
+    color: white;
+    display: block; }
+
+.menu-right .register-btn {
+  padding: 10px 12px;
+  border: 1px solid black; }
+  .menu-right .register-btn a {
+    color: black;
+    display: block; }
+
+.menu-right .testers-register {
+  padding: 10px 12px;
+  background-color: #e57735; }
+  .menu-right .testers-register a {
+    color: white;
+    display: block; }
+
+.landing-testers {
+  height: 100vh;
+  background: url(https://unsplash.it/1200/700) no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative; }
+  .landing-testers .tester-blurb {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; }
+    .landing-testers .tester-blurb h1 {
+      font-size: 3.3em; }
+    .landing-testers .tester-blurb p {
+      font-size: 1.8em; }
+    .landing-testers .tester-blurb a {
+      background-color: #e57735;
+      color: white;
+      font-size: 1.2em;
+      padding: 10px 12px;
+      display: inline-block;
+      border-radius: 1em; }
+
+.how-it-works {
+  padding: 35px 25px;
+  text-align: center; }
+  .how-it-works > h2 {
+    margin-bottom: 20px; }
+  .how-it-works > p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0px auto 25px; }
+  .how-it-works .tight-center {
+    max-width: 1200px;
+    margin: auto; }
+  .how-it-works .summary-card {
+    padding: 10px 15px; }
+    .how-it-works .summary-card h4 {
+      font-weight: 700; }
+    .how-it-works .summary-card .fa {
+      font-size: 12em;
+      margin-bottom: 15px;
+      transition: all 0.7s;
+      color: black; }
+    .how-it-works .summary-card:hover .fa {
+      color: green; }
+    .how-it-works .summary-card p {
+      max-width: 300px;
+      margin: auto; }
+
+.examples {
+  padding: 35px 25px;
+  background-color: #a4a4a4;
+  color: white;
+  text-align: center; }
+  .examples h2 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .examples .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+  .examples .video-container iframe, .examples .video-container object, .examples .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px; }
+  .examples button.watch-video {
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.5em;
+    background-color: #18b654;
+    border: none;
+    margin-bottom: 25px; }
+  .examples p {
+    max-width: 250px;
+    margin: auto; }
+
+.faq {
+  padding: 35px 25px;
+  margin: auto;
+  max-width: 1100px; }
+  .faq > h2 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .faq .panel-group .panel {
+    border-radius: 2em; }
+  .faq .panel-default > .panel-heading {
+    background-color: transparent;
+    padding: 0px; }
+    .faq .panel-default > .panel-heading a {
+      font-size: 1.3em;
+      display: block;
+      padding: 20px; }
+      .faq .panel-default > .panel-heading a .fa {
+        margin-right: 15px; }
+  .faq .panel-group .panel-heading + .panel-collapse > .list-group, .faq .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border: none; }

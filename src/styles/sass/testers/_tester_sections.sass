@@ -1,0 +1,114 @@
+.landing-testers
+  height: 100vh
+  background: url(https://unsplash.it/1200/700) no-repeat
+  background-size: cover
+  color: white
+  position: relative
+
+  .tester-blurb
+    text-align: center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    color: white
+    
+    h1
+      font-size: 3.3em
+    p
+      font-size: 1.8em
+    a
+      background-color: #e57735
+      color: white
+      font-size: 1.2em
+      padding: 10px 12px
+      display: inline-block
+      border-radius: 1em
+
+.how-it-works
+  padding: 35px 25px
+  text-align: center
+  
+  &>h2
+    margin-bottom: 20px
+  
+  &>p
+    font-size: 1.2em
+    max-width: 800px
+    margin: 0px auto 25px
+  
+  .tight-center
+    max-width: 1200px
+    margin: auto
+  .summary-card
+    padding: 10px 15px 
+    h4
+      font-weight: 700
+    .fa
+      font-size: 12em
+      margin-bottom: 15px
+      transition: all 0.7s
+      color: black
+    &:hover .fa
+        color: green
+    p
+      max-width: 300px
+      margin: auto
+
+.examples
+  padding: 35px 25px
+  background-color: #a4a4a4
+  color: white
+  text-align: center
+  h2
+    text-align: center
+    margin-bottom: 20px
+  
+  .video-container
+    position: relative
+    padding-bottom: 56.25%
+    padding-top: 30px
+    height: 0
+    overflow: hidden
+
+  .video-container iframe, .video-container object, .video-container embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    padding: 40px
+
+  button.watch-video
+    color: white
+    padding: 15px 20px
+    font-size: 1.5em
+    background-color: #18b654
+    border: none
+    margin-bottom: 25px 
+  p
+    max-width: 250px
+    margin: auto
+.faq
+  padding: 35px 25px
+  margin: auto
+  max-width: 1100px
+  
+  &>h2
+    text-align: center
+    margin-bottom: 20px
+  .panel-group .panel
+    border-radius: 2em
+
+  .panel-default>.panel-heading
+    background-color: transparent
+    padding: 0px
+    a
+      font-size: 1.3em
+      display: block
+      padding: 20px
+      .fa
+         margin-right: 15px
+  
+  .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body
+    border: none
