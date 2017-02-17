@@ -66,7 +66,8 @@ header {
 .logo {
   font-size: 2em;
   float: left;
-  font-weight: 700; }
+  font-weight: 700;
+  display: block; }
   .logo p {
     color: white;
     background-color: black;
@@ -87,21 +88,18 @@ nav .main-nav li {
 .menu-right div {
   display: inline-block;
   margin-left: 10px; }
-
 .menu-right .testers-signup-btn {
   background-color: #18b654;
   padding: 10px 12px; }
   .menu-right .testers-signup-btn a {
     color: white;
     display: block; }
-
 .menu-right .register-btn {
   padding: 10px 12px;
   border: 1px solid black; }
   .menu-right .register-btn a {
     color: black;
     display: block; }
-
 .menu-right .testers-register {
   padding: 10px 12px;
   background-color: #e57735; }
@@ -169,6 +167,10 @@ nav .main-nav li {
   .examples h2 {
     text-align: center;
     margin-bottom: 20px; }
+  @media (min-width: 992px) {
+    .examples .vertical-align {
+      display: flex;
+      align-items: center; } }
   .examples .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -213,3 +215,5 @@ nav .main-nav li {
         margin-right: 15px; }
   .faq .panel-group .panel-heading + .panel-collapse > .list-group, .faq .panel-group .panel-heading + .panel-collapse > .panel-body {
     border: none; }
+
+/*# sourceMappingURL=tester_style.css.map */

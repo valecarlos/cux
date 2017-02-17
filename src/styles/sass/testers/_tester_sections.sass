@@ -50,7 +50,7 @@
       transition: all 0.7s
       color: black
     &:hover .fa
-        color: green
+      color: green
     p
       max-width: 300px
       margin: auto
@@ -63,7 +63,12 @@
   h2
     text-align: center
     margin-bottom: 20px
-  
+
+  @media (min-width: 992px)
+    .vertical-align
+      display: flex
+      align-items: center
+
   .video-container
     position: relative
     padding-bottom: 56.25%
@@ -108,7 +113,7 @@
       display: block
       padding: 20px
       .fa
-         margin-right: 15px
+        margin-right: 15px
   
   .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body
     border: none
