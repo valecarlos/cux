@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 16px; }
 
@@ -19,6 +20,9 @@ button:focus {
 
 .container-fluid {
   padding: 0px; }
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.7); }
 
 footer {
   color: white;
@@ -109,10 +113,16 @@ nav .main-nav li {
 
 .landing-testers {
   height: 100vh;
-  background: url(https://unsplash.it/1200/700) no-repeat;
+  background: url("../../../img/tester-header-bgnd.png") no-repeat;
   background-size: cover;
   color: white;
   position: relative; }
+  .landing-testers > .background-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; }
   .landing-testers .tester-blurb {
     text-align: center;
     position: absolute;
@@ -148,22 +158,25 @@ nav .main-nav li {
     padding: 10px 15px; }
     .how-it-works .summary-card h4 {
       font-weight: 700; }
-    .how-it-works .summary-card .fa {
+    .how-it-works .summary-card span.icon-landing-money, .how-it-works .summary-card span.icon-landing-profile, .how-it-works .summary-card span.icon-landing-signup {
       font-size: 12em;
       margin-bottom: 15px;
       transition: all 0.7s;
       color: black; }
-    .how-it-works .summary-card:hover .fa {
+    .how-it-works .summary-card:hover span {
       color: green; }
     .how-it-works .summary-card p {
       max-width: 300px;
       margin: auto; }
 
 .examples {
-  padding: 35px 25px;
-  background-color: #a4a4a4;
+  background: url("../../../img/tester-examples-bgnd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   text-align: center; }
+  .examples .background-overlay {
+    padding: 35px 25px; }
   .examples h2 {
     text-align: center;
     margin-bottom: 20px; }
@@ -191,9 +204,23 @@ nav .main-nav li {
     background-color: #18b654;
     border: none;
     margin-bottom: 25px; }
+  .examples ul {
+    padding-left: 30px;
+    text-indent: 2px;
+    list-style: none;
+    list-style-position: outside; }
+    .examples ul li {
+      margin-bottom: 12px; }
+      .examples ul li:before {
+        content: "✔";
+        font-size: 1.9em;
+        margin-left: -1em;
+        margin-right: 0.1em; }
   .examples p {
-    max-width: 250px;
-    margin: auto; }
+    max-width: 1000px;
+    margin: auto;
+    font-size: 1.4em;
+    line-height: 170%; }
 
 .faq {
   padding: 35px 25px;

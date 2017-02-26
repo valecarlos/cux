@@ -1,0 +1,113 @@
+html {
+  font-size: 16px; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+button:focus {
+  outline: 0; }
+
+.container-fluid {
+  padding: 0px; }
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+footer {
+  color: white;
+  background-color: #413939;
+  padding: 20px; }
+  footer > p {
+    padding: 10px;
+    font-size: 0.9em;
+    clear: both; }
+  footer ul.nav-links {
+    float: left; }
+    footer ul.nav-links li {
+      border-right: solid 1px white;
+      float: left; }
+      footer ul.nav-links li:last-of-type {
+        border: none; }
+      footer ul.nav-links li a {
+        color: white;
+        display: block;
+        padding: 5px 10px; }
+  footer ul.social-links {
+    float: right;
+    margin-right: calc(5% + 65px); }
+    footer ul.social-links li {
+      display: inline-block; }
+      footer ul.social-links li a {
+        color: white;
+        padding: 5px;
+        font-size: 1.5em; }
+
+header {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-weight: 700;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  z-index: 100; }
+
+.logo {
+  font-size: 2em;
+  float: left;
+  font-weight: 700;
+  display: block; }
+  .logo p {
+    color: white;
+    background-color: black;
+    padding: 0px 10px;
+    display: inline-block; }
+  .logo span {
+    color: black;
+    background-color: white;
+    display: inline-block; }
+
+nav .main-nav li {
+  display: inline-block;
+  padding: 10px; }
+  nav .main-nav li a {
+    display: block;
+    color: black; }
+
+.menu-right div {
+  display: inline-block;
+  margin-left: 10px; }
+.menu-right .testers-signup-btn {
+  background-color: #18b654;
+  padding: 10px 12px; }
+  .menu-right .testers-signup-btn a {
+    color: white;
+    display: block; }
+.menu-right .register-btn {
+  padding: 10px 12px;
+  border: 1px solid black; }
+  .menu-right .register-btn a {
+    color: black;
+    display: block; }
+.menu-right .testers-register {
+  padding: 10px 12px;
+  background-color: #e57735; }
+  .menu-right .testers-register a {
+    color: white;
+    display: block; }
+
+/*# sourceMappingURL=tester_signup.css.map */

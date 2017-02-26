@@ -20,6 +20,9 @@ button:focus {
 .container-fluid {
   padding: 0px; }
 
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.7); }
+
 footer {
   color: white;
   background-color: #413939;
