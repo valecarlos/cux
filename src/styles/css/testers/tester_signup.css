@@ -53,7 +53,7 @@ footer {
         font-size: 1.5em; }
 
 header {
-  padding: 25px;
+  padding: 15px 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -109,5 +109,23 @@ nav .main-nav li {
   .menu-right .testers-register a {
     color: white;
     display: block; }
+
+.signup-testers {
+  background: url("../../../img/tester-examples-bgnd.png"); }
+  .signup-testers .background-overlay {
+    padding: 150px 20px; }
+  .signup-testers .signup-box {
+    padding: 50px 40px;
+    background-color: white;
+    color: black;
+    margin: auto;
+    max-width: 550px;
+    text-align: center; }
+    .signup-testers .signup-box h1 {
+      margin-bottom: 15px; }
+    .signup-testers .signup-box p {
+      margin-bottom: 15px; }
+    .signup-testers .signup-box btn {
+      border-radius: 30px; }
 
 /*# sourceMappingURL=tester_signup.css.map */

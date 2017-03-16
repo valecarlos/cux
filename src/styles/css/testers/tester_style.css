@@ -54,7 +54,7 @@ footer {
         font-size: 1.5em; }
 
 header {
-  padding: 25px;
+  padding: 15px 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
