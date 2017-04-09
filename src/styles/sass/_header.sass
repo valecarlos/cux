@@ -12,59 +12,83 @@ header
   background-color: white
   z-index: 100
 
-.logo
-  font-size: 2em
-  float: left
-  font-weight: 700
-  display: block
-  p
-    color: white
-    background-color: black
-    padding: 0px 10px
-    display: inline-block
-
-  span
-    color: black
-    background-color: white
-    display: inline-block
-
-nav
-
-  .main-nav
-
-    li
+  .logo
+    font-size: 2em
+    float: left
+    font-weight: 700
+    display: block
+    p
+      color: white
+      background-color: black
+      padding: 0px 10px
       display: inline-block
-      padding: 10px
 
-      a
-        display: block
-        color: black
-  
-.menu-right
-
-  div
-    display: inline-block
-    margin-left: 10px
-  
-  .testers-signup-btn
-    background-color: #18b654
-    padding: 10px 12px
-    
-    a
-      color: white
-      display: block
-
-  .register-btn
-    padding: 10px 12px
-    border: 1px solid black
-    a
+    span
       color: black
-      display: block
+      background-color: white
+      display: inline-block
+  .burger-btn
+    display: none
 
-  .testers-register
-    padding: 10px 12px
-    background-color: #e57735
+  nav
+
+    .main-nav
+
+      li
+        display: inline-block
+        padding: 10px
+
+        a
+          display: block
+          color: black
     
-    a
-      color: white
+  .menu-right
+
+    div
+      display: inline-block
+      margin-left: 10px
+    
+    .testers-signup-btn
+      background-color: #18b654
+      padding: 10px 12px
+      
+      a
+        color: white
+        display: block
+
+    .register-btn
+      padding: 10px 12px
+      border: 1px solid black
+      a
+        color: black
+        display: block
+
+    .testers-register
+      padding: 10px 12px
+      background-color: #e57735
+      
+      a
+        color: white
+        display: block
+  @media screen and (max-width: 992px)
+    display: block
+    position: relative
+    nav
+      display: none
+      text-align: center
+      .main-nav
+        li
+          display: block
+          a
+      &.visible
+        display: block
+    .menu-right
+      display: none
+    .logo
+      float: none
+      display: inline-block
+    .navbar-toggle
       display: block
+      float: right
+      .icon-bar
+        background-color: black

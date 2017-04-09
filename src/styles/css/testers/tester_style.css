@@ -66,50 +66,70 @@ header {
   left: 0px;
   background-color: white;
   z-index: 100; }
-
-.logo {
-  font-size: 2em;
-  float: left;
-  font-weight: 700;
-  display: block; }
-  .logo p {
-    color: white;
-    background-color: black;
-    padding: 0px 10px;
-    display: inline-block; }
-  .logo span {
-    color: black;
-    background-color: white;
-    display: inline-block; }
-
-nav .main-nav li {
-  display: inline-block;
-  padding: 10px; }
-  nav .main-nav li a {
-    display: block;
-    color: black; }
-
-.menu-right div {
-  display: inline-block;
-  margin-left: 10px; }
-.menu-right .testers-signup-btn {
-  background-color: #18b654;
-  padding: 10px 12px; }
-  .menu-right .testers-signup-btn a {
-    color: white;
+  header .logo {
+    font-size: 2em;
+    float: left;
+    font-weight: 700;
     display: block; }
-.menu-right .register-btn {
-  padding: 10px 12px;
-  border: 1px solid black; }
-  .menu-right .register-btn a {
-    color: black;
-    display: block; }
-.menu-right .testers-register {
-  padding: 10px 12px;
-  background-color: #e57735; }
-  .menu-right .testers-register a {
-    color: white;
-    display: block; }
+    header .logo p {
+      color: white;
+      background-color: black;
+      padding: 0px 10px;
+      display: inline-block; }
+    header .logo span {
+      color: black;
+      background-color: white;
+      display: inline-block; }
+  header .burger-btn {
+    display: none; }
+  header nav .main-nav li {
+    display: inline-block;
+    padding: 10px; }
+    header nav .main-nav li a {
+      display: block;
+      color: black; }
+  header .menu-right div {
+    display: inline-block;
+    margin-left: 10px; }
+  header .menu-right .testers-signup-btn {
+    background-color: #18b654;
+    padding: 10px 12px; }
+    header .menu-right .testers-signup-btn a {
+      color: white;
+      display: block; }
+  header .menu-right .register-btn {
+    padding: 10px 12px;
+    border: 1px solid black; }
+    header .menu-right .register-btn a {
+      color: black;
+      display: block; }
+  header .menu-right .testers-register {
+    padding: 10px 12px;
+    background-color: #e57735; }
+    header .menu-right .testers-register a {
+      color: white;
+      display: block; }
+  @media screen and (max-width: 992px) {
+    header {
+      display: block;
+      position: relative; }
+      header nav {
+        display: none;
+        text-align: center; }
+        header nav .main-nav li {
+          display: block; }
+        header nav.visible {
+          display: block; }
+      header .menu-right {
+        display: none; }
+      header .logo {
+        float: none;
+        display: inline-block; }
+      header .navbar-toggle {
+        display: block;
+        float: right; }
+        header .navbar-toggle .icon-bar {
+          background-color: black; } }
 
 .landing-testers {
   height: 100vh;

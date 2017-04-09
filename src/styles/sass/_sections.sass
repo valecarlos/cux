@@ -10,6 +10,7 @@
     justify-content: center
     display: flex
     flex-direction: column
+    background-color: rgba(0,0,0,0.8) 
     p
       font-size: 1.6em
     h1
@@ -57,14 +58,19 @@
 .abstract
   padding: 40px 0px
 
+  h2
+    margin-bottom: 25px
   &>p
     font-size: 1.3em
+    margin-bottom: 40px
   h3
     margin-bottom: 15px
     font-size: 2em
   
   img
+    height: 120px
     margin-bottom: 25px
+    margin-top: 25px
 
   .service-card h4 
     margin: 0px auto 10px auto
@@ -78,18 +84,45 @@
 //SERVICES SECTION
 .services
   padding: 40px 25px
+  margin: auto
+  max-width: 1050px
   span[class^="icon-"]
-    font-size: 200px
+    font-size: 240px
     color: black
   .service-card
     display: flex
     flex-direction: row
     justify-content: center
+    margin-bottom: 125px
     &:nth-child(odd)
       flex-direction: row-reverse
+    &:first-child
+    margin-top: 50px  
     img
-      width: 48px
+      height: 240px
     .service-abstract
+      display: flex
+      flex-direction: column
+      justify-content: center
+      p
+        max-width: 360px
+        padding: 10px
+        margin: auto
+  .btn-example, .btn-create-test
+    border: none
+    outline: none
+    border-radius: 15px
+    width: 140px
+    padding: 10px
+    margin: 10px 15px
+    font-size: 12px
+  .btn-example
+    background-color: white
+    border: 1px solid black
+  .btn-create-test
+    background-color: #5e5ed8
+    color: white
+
 
 //plans section
 .plans
@@ -102,4 +135,16 @@
     margin-bottom: 20px
     font-size: 2em
 
-  plan-card
+  .plan-card
+    padding: 15px
+    border: solid 1px black
+
+    .choose-plan-btn
+      border: none
+      outline: none
+      border-radius: 15px
+      width: 140px
+      padding: 10px
+      margin: 10px 15px
+      font-size: 12px
+      background-color: green
