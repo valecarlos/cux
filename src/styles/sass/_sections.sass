@@ -13,8 +13,13 @@
     background-color: rgba(0,0,0,0.8) 
     p
       font-size: 1.6em
+      padding: 10px 20px
+      max-width: 900px
+      margin-left: auto
+      margin-right: auto
     h1
       font-weight: bold
+      margin-bottom: 0px
     
     a
       display: flex
@@ -37,6 +42,19 @@
         white-space: nowrap
         display: inline-block
 
+    .title-slider-container
+      height: 76px
+      overflow: hidden
+      margin-bottom: 50px
+
+      .title-slider
+        margin-top: 0px
+        animation: moving-title 10s infinite
+
+        h2
+          margin: 20px
+          font-size: 36px
+          font-weight: bold
 
   .start-chat
     background-color: #ef5251
@@ -52,6 +70,76 @@
     font-size: 2em
     z-index: 100
 
+.test-types
+  .col-sm-6
+    height: 309px
+  img
+    box-shadow: 5px 10px 22px #101010
+  .gray-tile
+    position: relative
+    background-color: #f4f4f4
+    padding: 10px 20px
+
+    .test-type-blurb
+      color: black
+    
+    &:nth-of-type(1) .test-type-blurb
+      position: absolute
+      bottom: 0px
+      left: 50%
+      transform: translate(-50%, 0px)
+
+  .blue-tile
+    position: relative
+    background-color: #000c22
+    padding: 50px 20px
+
+    .test-type-blurb
+      color: white
+    
+    &:nth-of-type(2) .test-type-blurb
+      position: absolute
+      top: 30%
+      left: 50%
+      transform: translate(-50%, 0px)
+
+  .last-tile
+    position: relative
+    background-color: #2c2d3e
+    padding: 30px 20px 20px
+
+    .test-type-blurb
+      color: white
+
+  .test-type-blurb
+    max-width: 350px
+    margin: auto
+    line-height: 180%
+    font-size: 18px
+    font-weight: 300
+
+    p
+      text-align: left
+      margin-bottom: 20px
+
+    a
+      border-radius: 40px
+      padding: 5px 25px
+      border: solid 1px gray
+      color: inherit
+      font-size: 14px 
+
+  svg 
+    display: block
+    width: 100%
+    height: 90px
+    background: #f4f4f4
+
+  img.translate-down
+      transform: translate(0px, 100px)
+
+  img.translate-up
+      transform: translate(0px, -100px)
 
 //abstract section
 
@@ -81,70 +169,28 @@
     max-width: 250px
     margin: auto
 
-//SERVICES SECTION
-.services
-  padding: 40px 25px
-  margin: auto
-  max-width: 1050px
-  span[class^="icon-"]
-    font-size: 240px
-    color: black
-  .service-card
-    display: flex
-    flex-direction: row
-    justify-content: center
-    margin-bottom: 125px
-    &:nth-child(odd)
-      flex-direction: row-reverse
-    &:first-child
-    margin-top: 50px  
-    img
-      height: 240px
-    .service-abstract
-      display: flex
-      flex-direction: column
-      justify-content: center
-      p
-        max-width: 360px
-        padding: 10px
-        margin: auto
-  .btn-example, .btn-create-test
-    border: none
-    outline: none
-    border-radius: 15px
-    width: 140px
-    padding: 10px
-    margin: 10px 15px
-    font-size: 12px
-  .btn-example
-    background-color: white
-    border: 1px solid black
-  .btn-create-test
-    background-color: #5e5ed8
-    color: white
+//Animations
 
+@keyframes moving-title
+  0%
+    margin-top: 0px
+  23%
+    margin-top: 0px
+  
+  25%
+    margin-top: -59px
+  48%
+    margin-top: -59px
 
-//plans section
-.plans
-  padding: 40px 25px
+  50%
+    margin-top: -118px
+  73%
+    margin-top: -118px
+  
+  75%
+    margin-top: -177px
+  98%
+    margin-top: -177px
 
-  &>p
-    font-size: 1.3em
-    margin-bottom: 20px
-  h2
-    margin-bottom: 20px
-    font-size: 2em
-
-  .plan-card
-    padding: 15px
-    border: solid 1px black
-
-    .choose-plan-btn
-      border: none
-      outline: none
-      border-radius: 15px
-      width: 140px
-      padding: 10px
-      margin: 10px 15px
-      font-size: 12px
-      background-color: green
+  100%
+    margin-top: -236px

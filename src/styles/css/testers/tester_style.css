@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 16px; }
 
@@ -232,10 +231,10 @@ header {
     .examples ul li {
       margin-bottom: 12px; }
       .examples ul li:before {
-        content: "✔";
+        content: '\2714';
         font-size: 1.9em;
         margin-left: -1em;
-        margin-right: 0.1em; }
+        margin-right: .100em; }
   .examples p {
     max-width: 1000px;
     margin: auto;
@@ -262,5 +261,3 @@ header {
         margin-right: 15px; }
   .faq .panel-group .panel-heading + .panel-collapse > .list-group, .faq .panel-group .panel-heading + .panel-collapse > .panel-body {
     border: none; }
-
-/*# sourceMappingURL=tester_style.css.map */
